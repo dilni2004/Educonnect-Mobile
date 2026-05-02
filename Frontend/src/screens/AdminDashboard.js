@@ -42,6 +42,32 @@ const AdminDashboard = ({ navigation }) => {
           onPress={() => navigation.navigate('Tickets')}
         />
 
+        <Text style={styles.sectionTitle}>KNOWLEDGEBASE</Text>
+        <QuickCard
+          icon="reader-outline"
+          label="Articles"
+          color="#3498DB"
+          onPress={() => navigation.navigate('ManageKBArticles')}
+        />
+        <QuickCard
+          icon="help-circle-outline"
+          label="FAQs"
+          color="#8E44AD"
+          onPress={() => navigation.navigate('ManageKBFAQs')}
+        />
+        <QuickCard
+          icon="folder-open-outline"
+          label="Categories"
+          color="#9B59B6"
+          onPress={() => navigation.navigate('ManageKBCategories')}
+        />
+        <QuickCard
+          icon="shield-outline"
+          label="Policies"
+          color="#16A085"
+          onPress={() => navigation.navigate('ManageKBPolicies')}
+        />
+
         <Text style={styles.sectionTitle}>BOOKING MANAGEMENT</Text>
         <QuickCard
           icon="calendar-outline"
